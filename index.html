@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bonazon bone shopping</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  </head>
+<body>
+  <header>
+    <h1>Bonazon bone shopping</h1>
+    <div id="search-container">
+      <input type="text" id="search-bar" placeholder="Search for magical items..." />
+      <button onclick="searchProducts()">Search</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="product-results">
+      <!-- Elf-themed default products before search -->
+      <div class="product-item">
+        <h3><a href="https://amzn.to/4krfhpR" target="_blank">Milkbones</a></h3>
+        <p>10 pounds of milkbones</p>
+        <img src="IMG_6991.jpeg" alt="10 pounds of milkbones" width="100">
+      </div>
+      <div class="product-item">
+        <h3><a href="https://amzn.to/43oo9pV" target="_blank">giant Jenga</a></h3>
+        <p>Have some outdoor family fun this summer with the large version of the popular game Jenga!</p>
+        <img src="IMG_6992.jpeg" alt="outdoor Jenga" width="100">
+      </div>
+      <div class="product-item">
+        <h3><a href="https://amzn.to/4jNeCzG" target="_blank">outdoor toss and catch game</a></h3>
+        <p>Have summer fun playing catch outside with friends and family</p>
+        <img src="IMG_6993.jpeg" alt="outdoor toss and catch game" width="100">
+      </div>
+    </section>
+    <a href="https://forms.gle/Rqrz8b9DgvpvaPrK8" target="_blank">
+    <button>Request a Product</button>
+    <a href="check-requests.html">
+    <button>Check My Requests</button>
+</a>
+  </main>
+
+  <footer>
+    <h4>Bonazon bone shopping!</h4>
+    <p>This site uses amazon affiliate links and I might make a commision from any purchases made.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(registration => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(error => {
+        console.error('Service Worker registration failed:', error);
+      });
+  }
+</script>
+</body>
+</html>
